@@ -12,8 +12,7 @@ exports.max = function max (array) {
 
 exports.avg =  function avg (array) {
     if(array===undefined||array.length===0) return 0;
-    let mediana  = array.reduce((cur,acc)=>cur+acc,0)/(array.length-1);
-    let[integer,float]=mediana.toString().split(".");
-    return (integer+float.slice(0,1))/10
+
+    return array.reduce((curr,acc)=>curr+acc,0)/array.length
 }
 
